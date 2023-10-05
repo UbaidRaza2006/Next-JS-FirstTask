@@ -19,11 +19,12 @@ export default async function Products() {
     {
         products.map((data,index)=>{
             return(
+              <Link href={`products/${data.id}`}>
 <div key={index} className='p-2 bg-aqua w-[300px] m-4 rounded-md flex flex-col justify-arround'>
                <Image src={data.image} width={200} height={200}/>
                 <h1>{data.title}</h1>
                 <h5>{data.price}</h5>
-      </div> 
+      </div> </Link>
                       )
         })
     }
