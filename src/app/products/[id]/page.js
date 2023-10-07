@@ -3,7 +3,7 @@ import getProductsDetail from '@/lib/getProductsDetail';
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default async function ProductsDetail(params) {
+export default async function ProductsDetail({params}) {
 // console.log(params);
     const productsDetail = await getProductsDetail(params.id)
     // console.log(products);
