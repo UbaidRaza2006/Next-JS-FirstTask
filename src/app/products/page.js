@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default async function Products() {
 
     const products = await getProducts()
-    console.log(products);
+    // console.log(products);
 
   return (
     <main className="flex min-h-screen flex-col p-24">
